@@ -45,7 +45,7 @@ Or
 Start docker with scaled up services:
 
 ```
-docker-compose up --scale clientone=2 --scale clienttwo=3
+sudo docker-compose up --scale eurekaclientone=2 --scale eurekaclienttwo=3
 
 ```
 
@@ -62,7 +62,7 @@ Or
 Start docker with scaled up services:
 
 ```
-docker-compose up --scale clientone=2 --scale clienttwo=3
+sudo docker-compose up --scale eurekaclientone=2 --scale eurekaclienttwo=3
 
 ```
 ### NOTE:
