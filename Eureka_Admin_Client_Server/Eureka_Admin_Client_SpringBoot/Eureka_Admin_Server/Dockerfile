@@ -13,7 +13,5 @@ WORKDIR /spring_boot_eureka_admin_server/EurekaAdminServer
 # building the spring boot app
 RUN mvn clean install
 
+# changing the working directory to target folder
 WORKDIR /spring_boot_eureka_admin_server/EurekaAdminServer/target
-
-# running the spring boot app
-CMD ["java", "-jar", "admin-0.0.1-SNAPSHOT.jar"]

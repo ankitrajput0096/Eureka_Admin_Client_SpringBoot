@@ -1,6 +1,6 @@
 # Eureka Admin - Client Spring boot application 
 
-Dockerized Spring Boot application with Eureka Admin and client services.
+Dockerized Spring Boot application with Eureka Admin Cluster and client services.
 
 ## Getting Started
 
@@ -69,7 +69,14 @@ sudo docker-compose up --scale eurekaclientone=2 --scale eurekaclienttwo=3
 Can scale up clientone and clienttwo services to max instances of 5.
 If you want to scale even higher, then increase the port range in `docker-compose` file.
 
-Your main Eureka Admin server should be now running on http://localhost:8761
+Your Eureka Admin server cluster should be now running on http://localhost:9001, http://localhost:9002, http://localhost:9003
+
+## Eureka Server Cluster design: 
+1. Creating three peer aware eureka servers cluster
+![](images/eureka_cluster.png)
+2. Way it handles failover of one eureka node in cluster
+![](images/eureka_cluster_failover.png)
+
 
 ## Built With
 
