@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class eurekaClientTwoController {
 
-    @RequestMapping(value="/helloEurekaEndpointClientTwo", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(
+            value="/helloEurekaEndpointClientTwo",
+            method = RequestMethod.GET,
+            produces = "application/json")
     public ResponseEntity<String> helloEurekaEndpoint() {
-        return ResponseEntity.ok().body("This is hello eureka endpoint from client Two");
+        return ResponseEntity.ok().body("This is hello eureka " +
+                "endpoint from client Two");
     }
 }
